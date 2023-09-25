@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+*
+* Using CSS Variables to define the Tailwind theme.
+* Colors variables must be in the rgb space-separated syntax to work with tailwind generated alpha values.
+* It is possible to use hexadecimal values but will not work with alpha values (text-color/50)
+* 
+* - https://css-tricks.com/the-expanding-gamut-of-color-on-the-web/#aa-a-tale-of-new-syntaxes
+* - https://tailwindcss.com/docs/customizing-colors#using-css-variables
+* 
+*
+*/
+@layer base {
+  :root {
+    /* Brand colors */
+    --color-brand-50: 252 233 231;
+    --color-brand-100: 247 193 189;
+    --color-brand-200: 243 154 146;
+    --color-brand-300: 238 114 104;
+    --color-brand-400: 233 75 62;
+    --color-brand-500: 228 35 19;
+    --color-brand-600: 184 28 15;
+    --color-brand-700: 139 21 12;
+    --color-brand-800: 95 15 8;
+    --color-brand-900: 50 8 4;
+
+    /* Success colors */
+    --color-success-50: 230 243 230;
+    --color-success-100: 184 222 184;
+    --color-success-200: 138 201 138;
+    --color-success-300: 92 180 92;
+    --color-success-400: 40 162 40;
+    --color-success-500: 0 138 0;
+    --color-success-600: 0 111 0;
+    --color-success-700: 0 84 0;
+    --color-success-800: 0 57 0;
+    --color-success-900: 0 30 0;
+  }
+}
