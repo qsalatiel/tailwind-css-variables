@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import styles from "./btn.module.css";
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -10,12 +12,12 @@ function App() {
       </h1>
       <div>
         <button
-          className="text-success-300"
+          className={styles.btn}
           onClick={() => setCount((count) => count + 1)}
         >
           count is {count}
         </button>
-        <p>
+        <p className="text-success-400 text-xxxs">
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>

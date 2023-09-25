@@ -1,12 +1,14 @@
-import createColorRangeFromCSSVariables from "./utils";
+import theme from "./theme";
 
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
-      brand: createColorRangeFromCSSVariables("brand"),
-      success: createColorRangeFromCSSVariables("success"),
+      ...theme.colors,
+    },
+    fontSize: {
+      ...theme.fontSizes,
     },
     extend: {},
   },
